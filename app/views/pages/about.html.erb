@@ -1,0 +1,11 @@
+<h1>Hello world</h1>
+
+<%= link_to "Go to the contact", contact_path %>
+
+<%= @team  %>
+<form action="/about" method="get">
+  <input id="query" name="member" type="text" />
+  <input name="commit" type="submit" value="Search"/>
+</form>
+
+<%= @result %>
