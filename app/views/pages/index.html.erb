@@ -1,0 +1,15 @@
+<h1>Voici les membres de l'application</h1>
+
+<form action="/members" method="get" >
+  <label for="query">Search for:</label>
+  <input id="query" name="name" type="text" />
+  <input type="submit"/>
+</form>
+
+
+<% @members.each do |member| %>
+  <p><%= member %></p>
+<% end %>
+
+<%= link_to 'Aller sur contact', contact_path %>
+<%= link_to 'Go to members', members_path %>
