@@ -1,0 +1,17 @@
+<h1>test</h1>
+
+
+<ul>
+  <% @contact.each do |member| %>
+    <%= member %>
+  <% end %>
+</ul>
+<form action="/contact" method="get" accept-charset="UTF-8" >
+  <input id="query" name="name" type="text" />
+  <input name="commit" type="submit" value="Search" data-disable-with="Search" />
+</form>
+<%= @test %>
+
+
+<%= link_to 'le nom du lien', contact_path %>
+<%= form_with %>

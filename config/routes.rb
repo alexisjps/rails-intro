@@ -7,4 +7,21 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # 
+  # get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
+  # 
+  # resources :flats, as: 'ch' # ça me créé les 7 routes du crud
+  # get /flats
+  # /flats/:id
+  # /flats/new
+  # /flats/create
+  # DELETE /flats
+  # PATCH || PUT /flats/:id
+  # get 'about', to: 'moncontroller#mamethodeducontroller'
+  # get
+  # post
+  # PUT/PATH (update)
+  # DELETE
+
 end
